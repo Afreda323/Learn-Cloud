@@ -55,15 +55,29 @@ functions:
     handler: functions/update.main
     events:
       - http:
+<<<<<<< HEAD
           path: notes/{id}
           method: put
           cors: true
           authorizer: aws_iam
+=======
+        path: notes/{id}
+        method: put
+        cors: true
+        authorizer: aws_iam
+>>>>>>> 312b472... implemented delete
   delete:
     handler: functions/delete.main
     events:
       - http:
+<<<<<<< HEAD
           path: notes/{id}
           method: delete
           cors: true
           authorizer: aws_iam
+=======
+        path: notes/{id}
+        method: delete
+        cors: true
+        authorizer: aws_iam
+>>>>>>> 312b472... implemented delete

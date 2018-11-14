@@ -19,9 +19,17 @@ export async function main(event, context, callback) {
 
   try {
     const updated = await dynamoDb.call('update', params)
+<<<<<<< HEAD
+
+    return success({status: true})
+  } catch(e){
+      console.log(e)
+      return failure({status: false})
+=======
     return success({ status: true })
   } catch (e) {
     console.log(e)
     return failure({ status: false })
+>>>>>>> 312b472... implemented delete
   }
 }
