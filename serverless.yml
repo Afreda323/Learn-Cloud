@@ -6,8 +6,8 @@ plugins:
  
 custom:
   webpack:
-  webpackConfig: ./webpack.config.js
-  includeModules: true
+    webpackConfig: ./webpack.config.js
+    includeModules: true
  
 provider:
   name: aws
@@ -24,7 +24,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:us-east-1:*:*"
+      Resource: "arn:aws:dynamodb:us-east-2:*:*"
 
 functions:
   create:
