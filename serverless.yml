@@ -56,20 +56,27 @@ functions:
     events:
       - http:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2315fa1... fixed yaml
           path: notes/{id}
           method: put
           cors: true
           authorizer: aws_iam
+<<<<<<< HEAD
 =======
         path: notes/{id}
         method: put
         cors: true
         authorizer: aws_iam
 >>>>>>> 312b472... implemented delete
+=======
+>>>>>>> 2315fa1... fixed yaml
   delete:
     handler: functions/delete.main
     events:
       - http:
+<<<<<<< HEAD
 <<<<<<< HEAD
           path: notes/{id}
           method: delete
@@ -81,3 +88,9 @@ functions:
         cors: true
         authorizer: aws_iam
 >>>>>>> 312b472... implemented delete
+=======
+          path: notes/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+>>>>>>> 2315fa1... fixed yaml
