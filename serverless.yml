@@ -18,6 +18,8 @@ custom:
 resources:
   # DynamoDB
   - ${file(resources/dynamodb.yml)}
+  # S3
+  - ${file(resources/s3.yml)}
 
 provider:
   name: aws
