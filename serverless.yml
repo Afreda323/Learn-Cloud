@@ -20,6 +20,8 @@ resources:
   - ${file(resources/dynamodb.yml)}
   # S3
   - ${file(resources/s3.yml)}
+  # Cognito
+  - ${file(resources/cognito-user-pool.yml)}
 
 provider:
   name: aws
