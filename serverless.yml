@@ -17,12 +17,12 @@ custom:
  
 resources:
   # DynamoDB
-  - ${file(resources/dynamodb.yml)}
+  - ${file(resources/dynamo.yaml)}
   # S3
-  - ${file(resources/s3.yml)}
+  - ${file(resources/s3.yaml)}
   # Cognito
-  - ${file(resources/uder-pool-.yml)}
-  - ${file(resources/id-pool.yml)}
+  - ${file(resources/user-pool.yaml)}
+  - ${file(resources/id-pool.yaml)}
 
 provider:
   name: aws
