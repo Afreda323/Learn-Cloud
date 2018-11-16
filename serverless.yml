@@ -87,3 +87,11 @@ functions:
           method: delete
           cors: true
           authorizer: aws_iam
+  billing:
+    handler: functions/billing.main
+    events:
+      - http:
+          path: billing
+          method: post
+          cors: true
+          authorizor: aws_iam
