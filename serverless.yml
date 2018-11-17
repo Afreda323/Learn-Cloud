@@ -32,7 +32,7 @@ provider:
   region: us-east-2
   environment:
     tableName: ${self:custom.tableName}
-    stripeSecretKey: ${self:custom.environment.stripeSecretKey}
+    stripeSecretKey: ${self:custom.environment.stripeSecretKey, env:stripeSecretKey}
   iamRoleStatements:
     - Effect: Allow
       Action:
