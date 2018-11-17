@@ -10,12 +10,14 @@ export async function main(event, context) {
   const Stripe = stripe(process.env.stripeSecretKey)
 
   try {
-    await Stripe.charges.create({
-      source,
-      amount,
-      description,
-      currency: 'usd'
-    })
+    if (amount > 0) {
+      await Stripe.charges.create({
+        source,
+        amount,
+        description,
+        currency: 'usd'
+      })
+    }
     return success({ status: true })
   } catch (e) {
     console.log(e)
